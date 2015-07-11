@@ -31,6 +31,22 @@
     </dependencies>
 
     <build>
+      <resources>
+        <resource>
+          <directory>src/main/resources</directory>
+        </resource>
+        <resource>
+          <directory>src/main/clojure</directory>
+        </resource>
+      </resources>
+      <testResources>
+        <testResource>
+          <directory>src/test/resources</directory>
+        </testResource>
+        <testResource>
+          <directory>src/test/clojure</directory>
+        </testResource>
+      </testResources>
         <plugins>
             <plugin>
                 <groupId>com.theoryinpractise</groupId>
@@ -43,7 +59,6 @@
                             <goal>add-source</goal>
                             <goal>compile</goal>
                             <goal>add-test-source</goal>
-                            <goal>testCompile</goal>
                             <goal>test</goal>
                         </goals>
                     </execution>
