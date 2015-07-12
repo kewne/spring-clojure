@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>spring-clojure</artifactId>
-    <packaging>jar</packaging>
+    <packaging>clojure</packaging>
 
     <name>Spring Clojure</name>
 
@@ -36,17 +36,7 @@
                 <groupId>com.theoryinpractise</groupId>
                 <artifactId>clojure-maven-plugin</artifactId>
                 <version>1.7.1</version>
-                <executions>
-                    <execution>
-                        <id>default</id>
-                        <goals>
-                            <goal>add-source</goal>
-                            <goal>compile</goal>
-                            <goal>add-test-source</goal>
-                            <goal>test</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <extensions>true</extensions>
             </plugin>
         </plugins>
     </build>
